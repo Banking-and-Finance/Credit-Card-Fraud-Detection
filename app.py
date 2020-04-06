@@ -34,9 +34,9 @@ def results():
 
 	X_test, y_test = preprocessing(data)
 
-	rf_model = joblib.load('random_forest_model.pkl')	
-	lr_model = joblib.load('logistic_regression_model.pkl')	
-	nb_model = joblib.load('naive_bayes_model.pkl')	
+	rf_model = joblib.load('models/random_forest_model.pkl')	
+	lr_model = joblib.load('models/logistic_regression_model.pkl')	
+	nb_model = joblib.load('models/naive_bayes_model.pkl')	
 	
 	input_tuple = X_test.sample(1) # Select a random row from X_test
 
